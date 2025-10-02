@@ -25,18 +25,16 @@ add_global_arguments(cpp_args, language : 'cpp')
 
 app_sources = [
     'main.cpp',
-    'item.h',
     'bank_customer.h',
     'bank_customer.cpp',
     'bank.h',
+    'bank.cpp',  # <-- FILE BARU DITAMBAHKAN DI SINI
     'item.h', 
+    'buyer.h',
     'seller.h'
-# Add other source files here, e.g., 'src/helper.cpp'
 ]
 
 executable('my_app',
     app_sources,
-    # Example dependencies:
-    # dependencies: [fmt_dep],
     install: true
 )
